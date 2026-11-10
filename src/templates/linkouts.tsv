@@ -32,7 +32,8 @@ http://purl.obolibrary.org/obo/NCBITaxon_9526		Catarrhini
 http://purl.obolibrary.org/obo/NCBITaxon_9604		Hominidae
 http://purl.obolibrary.org/obo/NCBITaxon_9605		Homo
 http://purl.obolibrary.org/obo/NCBITaxon_9606		Homo sapiens
-http://purl.obolibrary.org/obo/UBERON_0000000		processual entity
+http://purl.obolibrary.org/obo/UBERON_0000000		obsolete processual entity
+http://purl.obolibrary.org/obo/UBERON_0000001		gross anatomical part
 http://purl.obolibrary.org/obo/UBERON_0000005		chemosensory organ
 http://purl.obolibrary.org/obo/UBERON_0000006		islet of Langerhans
 http://purl.obolibrary.org/obo/UBERON_0000007		pituitary gland
@@ -723,7 +724,7 @@ http://purl.obolibrary.org/obo/UBERON_0002338		lamina propria of bronchus
 http://purl.obolibrary.org/obo/UBERON_0002342		neural crest
 http://purl.obolibrary.org/obo/UBERON_0002343		abdomen musculature
 http://purl.obolibrary.org/obo/UBERON_0002345		descending thoracic aorta
-http://purl.obolibrary.org/obo/UBERON_0002346		neurectoderm
+http://purl.obolibrary.org/obo/UBERON_0002346		neuroectoderm
 http://purl.obolibrary.org/obo/UBERON_0002347		thoracic vertebra
 http://purl.obolibrary.org/obo/UBERON_0002348		epicardium
 http://purl.obolibrary.org/obo/UBERON_0002349		myocardium
@@ -3271,6 +3272,8 @@ http://purl.obolibrary.org/obo/UBERON_8600123		lower airway ganglion
 http://purl.obolibrary.org/obo/UBERON_8600136		sigmoid colon lamina propria
 http://purl.obolibrary.org/obo/UBERON_8600138		stomach lamina propria
 http://purl.obolibrary.org/obo/UBERON_8600140		rectum lamina propria
+http://purl.obolibrary.org/obo/UBERON_8850001		epithelium of anorectum
+http://purl.obolibrary.org/obo/UBERON_8930191		spleen connective tissue
 https://purl.brain-bican.org/ontology/HOMBA_0000000		root node
 https://purl.brain-bican.org/ontology/HOMBA_10154		central nervous system (neural tube)
 https://purl.brain-bican.org/ontology/HOMBA_10155		brain

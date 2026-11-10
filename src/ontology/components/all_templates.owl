@@ -45,6 +45,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9604>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9605>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000007>))
@@ -3283,6 +3284,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8600123>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8600136>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8600138>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8600140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8850001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8930191>))
 Declaration(Class(<https://purl.brain-bican.org/ontology/HOMBA_0000000>))
 Declaration(Class(<https://purl.brain-bican.org/ontology/HOMBA_10154>))
 Declaration(Class(<https://purl.brain-bican.org/ontology/HOMBA_10155>))
@@ -5768,7 +5771,11 @@ AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/NCBITaxon_960
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000000> (<http://purl.obolibrary.org/obo/UBERON_0000000>)
 
-AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/UBERON_0000000> "processual entity")
+AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/UBERON_0000000> "obsolete processual entity")
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0000001> (<http://purl.obolibrary.org/obo/UBERON_0000001>)
+
+AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/UBERON_0000001> "gross anatomical part")
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000005> (<http://purl.obolibrary.org/obo/UBERON_0000005>)
 
@@ -8532,7 +8539,7 @@ AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/UBERON_000234
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0002346> (<http://purl.obolibrary.org/obo/UBERON_0002346>)
 
-AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/UBERON_0002346> "neurectoderm")
+AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/UBERON_0002346> "neuroectoderm")
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0002347> (<http://purl.obolibrary.org/obo/UBERON_0002347>)
 
@@ -18721,6 +18728,14 @@ AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/UBERON_860013
 # Class: <http://purl.obolibrary.org/obo/UBERON_8600140> (<http://purl.obolibrary.org/obo/UBERON_8600140>)
 
 AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/UBERON_8600140> "rectum lamina propria")
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_8850001> (<http://purl.obolibrary.org/obo/UBERON_8850001>)
+
+AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/UBERON_8850001> "epithelium of anorectum")
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_8930191> (<http://purl.obolibrary.org/obo/UBERON_8930191>)
+
+AnnotationAssertion(skos:prefLabel <http://purl.obolibrary.org/obo/UBERON_8930191> "spleen connective tissue")
 
 # Class: <https://purl.brain-bican.org/ontology/HOMBA_0000000> (<https://purl.brain-bican.org/ontology/HOMBA_0000000>)
 

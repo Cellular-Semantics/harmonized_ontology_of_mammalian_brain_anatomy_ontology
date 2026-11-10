@@ -22,6 +22,8 @@ Preparation:
 To actually run the release, you:
 
 1. Open a command line terminal window and navigate to the src/ontology directory (`cd homba/src/ontology`)
+    **HOMBA:** the Uberon bridge and import are pinned (`HOMBA_BRIDGE_REF` and `UBERON_RELEASE` in `src/ontology/homba.Makefile`), so a release doesn't pick up a newer bridge or Uberon on its own. To use a newer one in this release, first bump the pin, rebuild the component and refresh the imports, then regenerate `qc_known_inconsistent_full_uberon.txt`. Merge all of that as its own PR before running the release. See [Uberon pins and full-Uberon QC](../uberon-qc.md#bumping-a-pin-before-refresh-imports-and-every-release).
+
 2. Run release pipeline:`sh run.sh make prepare_release -B`. Note that for some ontologies, this process can take up to 90 minutes - especially if there are large ontologies you depend on, like PRO or CHEBI.
 3. If everything went well, you should see the following output on your machine: `Release files are now in ../.. - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab`.
 

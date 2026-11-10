@@ -7,10 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://purl.brain-bican.org/ontology/homba/imports/merged_import.owl>
-<https://purl.brain-bican.org/ontology/homba/releases/2026-03-23/imports/merged_import.owl>
-Annotation(owl:versionInfo "2026-03-23")
+<https://purl.brain-bican.org/ontology/homba/releases/2026-11-10/imports/merged_import.owl>
+Annotation(owl:versionInfo "2026-11-10")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_16336>))
@@ -129,6 +129,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CL_1000410>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_1000488>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_2000089>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023161>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0001659>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0001696>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0001820>))
@@ -226,6 +228,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071953>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097254>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097457>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0098643>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0110165>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_2000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NBO_0000308>))
@@ -297,6 +300,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PR_000014841>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PR_000015557>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PR_000015658>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000007>))
@@ -3535,6 +3539,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8600123>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8600136>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8600138>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8600140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8850001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_8930191>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
@@ -3737,6 +3743,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/uberon/core#site_
 # Object Property: <http://purl.obolibrary.org/obo/uberon/core#subdivision_of> (subdivision of)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/uberon/core#subdivision_of> "subdivision of")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/BFO_0000050>)
 
 # Object Property: <http://purl.obolibrary.org/obo/uberon/core#transitively_anteriorly_connected_to> (transitively anteriorly connected to)
 
@@ -3918,9 +3925,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9605> <http://purl.obolibra
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/NCBITaxon_9605>)
 
-# Class: <http://purl.obolibrary.org/obo/UBERON_0000000> (processual entity)
+# Class: <http://purl.obolibrary.org/obo/UBERON_0000000> (obsolete processual entity)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000000> "processual entity")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000000> "obsolete processual entity")
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0000001> (gross anatomical part)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000001> "gross anatomical part")
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000001> <http://purl.obolibrary.org/obo/UBERON_0000465>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000005> (chemosensory organ)
 
@@ -4224,7 +4236,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000065> ObjectSomeValuesFrom(
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0000066> "fully formed animal stage")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0000066> "juvenile-adult stage")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000066> "fully formed stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000066> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000066> <http://purl.obolibrary.org/obo/UBERON_0000105>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000092>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/UBERON_0000111>))
@@ -4234,7 +4245,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000066> ObjectSomeValuesFrom(
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0000068> "embryonic stage")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000068> "embryo stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000068> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000068> <http://purl.obolibrary.org/obo/UBERON_0000105>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000063> <http://purl.obolibrary.org/obo/UBERON_0000066>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000063> <http://purl.obolibrary.org/obo/UBERON_0000092>))
@@ -4243,7 +4253,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000068> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000071> (death stage)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000071> "death stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000071> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000071> <http://purl.obolibrary.org/obo/UBERON_0000105>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000071> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002229> <http://purl.obolibrary.org/obo/UBERON_0000104>))
 
@@ -4335,7 +4344,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000091> ObjectSomeValuesFrom(
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0000092> "postembryonic stage")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000092> "post-embryonic stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000092> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000092> <http://purl.obolibrary.org/obo/UBERON_0000105>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000092> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/UBERON_0000068>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000092> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002082> <http://purl.obolibrary.org/obo/GO_0009791>))
@@ -4383,14 +4391,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0000104> "life")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0000104> "lifespan")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000104> "life cycle")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000104> <http://purl.obolibrary.org/obo/BFO_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000104> <http://purl.obolibrary.org/obo/UBERON_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000104> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002230> <http://purl.obolibrary.org/obo/UBERON_0000071>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000105> (life cycle stage)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000105> "life cycle stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000105> <http://purl.obolibrary.org/obo/UBERON_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000105> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000105> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000104>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000106> (zygote stage)
@@ -4398,7 +4405,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000105> ObjectSomeValuesFrom(
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0000106> "1-cell stage")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0000106> "one cell stage")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000106> "zygote stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000106> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000106> <http://purl.obolibrary.org/obo/UBERON_0000105>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000068>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002223> <http://purl.obolibrary.org/obo/UBERON_0000104>))
@@ -4407,7 +4413,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000106> ObjectSomeValuesFrom(
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000107> "cleavage stage")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0000107> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000105> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002082> <http://purl.obolibrary.org/obo/GO_0040016>)))
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000107> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000107> <http://purl.obolibrary.org/obo/UBERON_0000105>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000068>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002082> <http://purl.obolibrary.org/obo/GO_0040016>))
@@ -4416,7 +4421,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000107> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000108> (blastula stage)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000108> "blastula stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000108> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000108> <http://purl.obolibrary.org/obo/UBERON_0000105>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000068>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/UBERON_0000107>))
@@ -4424,7 +4428,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000108> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000109> (gastrula stage)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000109> "gastrula stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000109> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000109> <http://purl.obolibrary.org/obo/UBERON_0000105>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000068>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/UBERON_0000108>))
@@ -4434,7 +4437,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000109> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000110> (neurula stage)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000110> "neurula stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000110> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000110> <http://purl.obolibrary.org/obo/UBERON_0000105>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000110> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000068>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000110> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/UBERON_0000109>))
@@ -4444,7 +4446,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000110> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000111> (organogenesis stage)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000111> "organogenesis stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000111> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000111> <http://purl.obolibrary.org/obo/UBERON_0000105>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000068>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002082> <http://purl.obolibrary.org/obo/GO_0048513>))
@@ -4638,7 +4639,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000167> ObjectSomeValuesFrom(
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000168> "proximal-distal subdivision of colon")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0000168> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0013522> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0001155>)))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000168> <http://purl.obolibrary.org/obo/UBERON_0004921>)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000168> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001155>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000168> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0001155>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000170> (pair of lungs)
@@ -4653,8 +4653,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000170> ObjectSomeValuesFrom(
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000170> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001025> <http://purl.obolibrary.org/obo/UBERON_0002224>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000170> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/UBERON_0002167>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000170> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/UBERON_0002168>))
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000170> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/UBERON_0002167>))
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000170> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/UBERON_0002168>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000171> (respiration organ)
 
@@ -5063,7 +5061,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000457> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000463> (organism substance)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000463> "organism substance")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000463> <http://purl.obolibrary.org/obo/UBERON_0000465>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000463> <http://purl.obolibrary.org/obo/UBERON_0000001>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000463> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000468>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000463> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0002198>))
 
@@ -5077,6 +5075,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000464> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000465> (material anatomical entity)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000465> "material anatomical entity")
+EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0000465> ObjectUnionOf(<http://purl.obolibrary.org/obo/CL_0000000> <http://purl.obolibrary.org/obo/COB_0000021> <http://purl.obolibrary.org/obo/COB_0000022> <http://purl.obolibrary.org/obo/GO_0110165>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/BFO_0000040>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 
@@ -5121,7 +5120,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000476> (acellular anatomical structure)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000476> "acellular anatomical structure")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000476> <http://purl.obolibrary.org/obo/UBERON_0000061>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000476> <http://purl.obolibrary.org/obo/UBERON_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000477> (anatomical cluster)
 
@@ -5758,6 +5757,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001052> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001062> "anatomical entity")
+EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0001062> ObjectUnionOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0000466>))
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0001062> ObjectHasSelf(<http://purl.obolibrary.org/obo/RO_0020105>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001063> (flocculus)
@@ -7249,6 +7249,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001677> ObjectSomeValuesFrom(
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001678> "temporal bone")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001678> <http://purl.obolibrary.org/obo/UBERON_0008193>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001678> <http://purl.obolibrary.org/obo/UBERON_0011164>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/UBERON_0002241>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/UBERON_0003113>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001678> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/UBERON_0008895>))
@@ -7707,7 +7708,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001803> ObjectSomeValuesFrom(
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0001804> "lens capsule")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001804> "capsule of lens")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0001804> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000476> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002007> <http://purl.obolibrary.org/obo/UBERON_0000965>)))
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001804> <http://purl.obolibrary.org/obo/UBERON_0004121>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001804> <http://purl.obolibrary.org/obo/UBERON_0005764>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001804> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_35722>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001804> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0005587>))
@@ -10214,11 +10214,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002345> ObjectSomeValuesFrom(
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002345> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002433> <http://purl.obolibrary.org/obo/UBERON_0001514>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002345> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002433> <http://purl.obolibrary.org/obo/UBERON_0001515>))
 
-# Class: <http://purl.obolibrary.org/obo/UBERON_0002346> (neurectoderm)
+# Class: <http://purl.obolibrary.org/obo/UBERON_0002346> (neuroectoderm)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0002346> "neural ectoderm")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0002346> "neuroectoderm")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0002346> "neurectoderm")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0002346> "neurectoderm")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0002346> "neuroectoderm")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002346> <http://purl.obolibrary.org/obo/UBERON_0000923>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002346> <http://purl.obolibrary.org/obo/UBERON_0004121>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002346> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CL_0000133>))
@@ -16152,6 +16152,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004365> ObjectSomeValuesFrom(
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0004370> "anterior limiting lamina of cornea")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0004370> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0005769> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000964>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002371> <http://purl.obolibrary.org/obo/UBERON_0001772>)))
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004370> <http://purl.obolibrary.org/obo/UBERON_0000061>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004370> <http://purl.obolibrary.org/obo/UBERON_0005769>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004370> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000964>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004370> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002371> <http://purl.obolibrary.org/obo/UBERON_0001772>))
@@ -17276,7 +17277,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004916> ObjectSomeValuesFrom(
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0004921> "subdivision of digestive tract")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0004921> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0013522> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0001555>)))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004921> <http://purl.obolibrary.org/obo/UBERON_0013522>)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004921> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001555>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004921> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0001555>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0004922> (postnatal subventricular zone)
@@ -18224,7 +18224,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0005421> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0005423> (developing anatomical structure)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0005423> "developing anatomical structure")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0005423> <http://purl.obolibrary.org/obo/UBERON_0000465>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0005423> <http://purl.obolibrary.org/obo/UBERON_0000001>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0005423> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0032502>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0005425> (presumptive neural retina)
@@ -19246,7 +19246,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0006076> "
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0006076> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0006077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0006071>)))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006076> <http://purl.obolibrary.org/obo/UBERON_0006077>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006076> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002090>))
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006076> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0006071>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006076> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0006071>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0006077> (subdivision of vertebral column)
@@ -19256,7 +19255,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0006077> "subdivision of vertebral column")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0006077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0001130>)))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006077> <http://purl.obolibrary.org/obo/UBERON_0000075>)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001130>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001137>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0001130>))
 
@@ -21016,7 +21014,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0007617> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0007625> (pigment epithelium of eye)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0007625> "pigment epithelium of eye")
-EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0007625> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000483> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000970>)))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0007625> <http://purl.obolibrary.org/obo/UBERON_0019304>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0007625> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000970>))
 
@@ -21450,8 +21447,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0008342> ObjectSomeValuesFrom(
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0008346> "duodenal epithelium")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0008346> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000483> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002114>)))
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0008346> <http://purl.obolibrary.org/obo/UBERON_0013636>)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0008346> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008342>))
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0008346> <http://purl.obolibrary.org/obo/UBERON_0001902>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0008346> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002114>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0008397> (tracheobronchial epithelium)
 
@@ -22013,7 +22010,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0009568> "trunk region of vertebral column")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0009568> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0006077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002100>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0002100>)))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0009568> <http://purl.obolibrary.org/obo/UBERON_0006077>)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0009568> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002100>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0009568> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0002100>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0009569> (subdivision of trunk)
@@ -24847,7 +24843,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0013514> ObjectSomeValuesFrom(
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0013522> "subdivision of tube")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0013522> <http://purl.obolibrary.org/obo/UBERON_0000064>)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0013522> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000025>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0013522> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/UBERON_0000060>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0013522> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/UBERON_0000464>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0013522> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0000025>))
@@ -25300,7 +25295,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0014534> ObjectSomeValuesFrom(
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0014538> "subdivision of spinal cord central canal")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0014538> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0004111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0002291>)))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0014538> <http://purl.obolibrary.org/obo/UBERON_0004111>)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0014538> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002291>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0014538> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/uberon/core#subdivision_of> <http://purl.obolibrary.org/obo/UBERON_0002291>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0014540> (white matter lamina of cerebellum)
@@ -26102,7 +26096,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0015807> ObjectSomeValuesFrom(
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0015808> "eye epithelium")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0015808> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000483> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000019>)))
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0015808> <http://purl.obolibrary.org/obo/UBERON_0007625>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0015808> <http://purl.obolibrary.org/obo/UBERON_0019304>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0015808> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000019>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0015833> (foregut epithelium)
@@ -28703,7 +28697,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0036214> ObjectSomeValuesFrom(
 # Class: <http://purl.obolibrary.org/obo/UBERON_0036215> (anatomical surface region)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0036215> "anatomical surface region")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0036215> <http://purl.obolibrary.org/obo/UBERON_0000465>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0036215> <http://purl.obolibrary.org/obo/UBERON_0000001>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0036215> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002007> <http://purl.obolibrary.org/obo/UBERON_0000061>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0036217> (coelomic fluid)
@@ -29431,6 +29425,20 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_8600140> "
 EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_8600140> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001052>)))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_8600140> <http://purl.obolibrary.org/obo/UBERON_0011189>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_8600140> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001052>))
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_8850001> (epithelium of anorectum)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_8850001> "epithelium of anorectum")
+EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_8850001> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000483> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_8410050>)))
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_8850001> <http://purl.obolibrary.org/obo/UBERON_0001278>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_8850001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_8410050>))
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_8930191> (spleen connective tissue)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_8930191> "spleen connective tissue")
+EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_8930191> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0002384> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002106>)))
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_8930191> <http://purl.obolibrary.org/obo/UBERON_0003567>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_8930191> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002106>))
 
 
 SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_7776>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002551> <http://purl.obolibrary.org/obo/UBERON_0003129>))
